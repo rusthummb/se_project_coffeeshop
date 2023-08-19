@@ -67,7 +67,7 @@
   top: -152px;
 }
 
-.about__animation_blurred {
+.about__pulsate_animation_blurred {
   animation: pulsate 1.3s infinite ease-in-out;
   background-color: #2f80ed;
   width: 426px;
