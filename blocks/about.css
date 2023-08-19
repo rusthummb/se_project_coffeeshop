@@ -1,19 +1,22 @@
 @keyframes pulsate {
   0% {
-    opacity: (100%);
+    opacity: 0;
   }
 
   50% {
-    opacity: (0.6%);
+    opacity: 0.6;
   }
 
+  100% {
+    opacity: 0;
+  }
   100% {
     transform: scale(1.3);
   }
 }
 
 .about {
-  padding: 119px 80px 173px;
+  padding: 100px 80px 173px;
   background-color: #0a2850;
   color: #fff;
   overflow: hidden;
@@ -34,7 +37,7 @@
 
 .about__title {
   margin: 0;
-  font-family: "Inter";
+  font-family: "Inter" Arial, sans-serif;
   max-width: 251px;
   font-size: 44px;
   line-height: 52px;
@@ -43,7 +46,7 @@
 }
 
 .about__content {
-  font-family: "Noto Serif";
+  font-family: "Noto Serif" Times New Roman, serif;
   font-style: normal;
   font-size: 20px;
   line-height: 30px;
@@ -51,6 +54,7 @@
   max-width: 660px;
   z-index: 1;
   margin-left: auto;
+  margin-top: 19px;
 }
 
 .about__circle {
@@ -63,7 +67,7 @@
   top: -152px;
 }
 
-.about__circle_animation_blurred {
+.about__animation_blurred {
   animation: pulsate 1.3s infinite ease-in-out;
   background-color: #2f80ed;
   width: 426px;

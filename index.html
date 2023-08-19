@@ -8,7 +8,6 @@
     <meta name="author" content="Rustom Dela Cruz" />
     <title>Coffee Shop</title>
     <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,11 +29,9 @@
             <li>
               <a href="#recipes" class="nav__link">Recipes</a>
             </li>
+            <li><a href="#reservation" class="nav__link">Book a table</a></li>
             <li>
               <a href="#menu" class="nav__link">Menu</a>
-            </li>
-            <li>
-              <a href="#reservation" class="nav__link">Book a table</a>
             </li>
             <li>
               <a href="#about" class="nav__link">Contacts</a>
@@ -60,7 +57,7 @@
             <p class="header__paragraph">Monday – Friday (10:00 – 19:00)</p>
             <p class="header__paragraph">Saturday – Sunday (11:00 – 18:00)</p>
           </div>
-          <p class="header__address">
+          <p class="header__paragraph">
             200 Success Avenue, The Town of Triple Peaks
           </p>
         </div>
@@ -103,6 +100,7 @@
                   type="text"
                   class="form__input"
                   placeholder="   Name Surname"
+                  required
               /></label>
               <label for="number" class="form__label"
                 >Number of guests*<input
@@ -110,12 +108,14 @@
                   type="number"
                   class="form__input"
                   placeholder="   1-8"
+                  required
               /></label>
               <label for="date-time" class="form__label"
                 >Date & Time *<input
                   id="date-time"
                   type="datetime-local"
                   class="form__input"
+                  required
               /></label>
               <label for="email" class="form__label"
                 >Your Email *<input
@@ -123,12 +123,19 @@
                   type="email"
                   class="form__input"
                   placeholder="   email@email.com"
+                  required
               /></label>
             </fieldset>
-            <button class="form__button">Book a table</button>
+            <button type="submit" class="form__button" required>
+              Book a table
+            </button>
             <label for="checkbox" class="form__label form__label_type_checkbox">
-              <input id="checkbox" type="checkbox" class="form__checkbox" />I
-              agree with terms of use
+              <input
+                id="checkbox"
+                type="checkbox"
+                class="form__checkbox"
+                required
+              />I agree with terms of use
             </label>
           </form>
         </section>
@@ -209,7 +216,7 @@
           </ul>
         </section>
         <section id="about" class="about">
-          <h4 class="about__title">About the coffee shop</h4>
+          <h2 class="about__title">About the coffee shop</h2>
           <div class="about__content">
             <p class="about__paragraph">
               Our coffee shop is located in the Triple Peaks Library. It
@@ -225,7 +232,7 @@
             </p>
           </div>
           <div class="about__circle"></div>
-          <div class="about__circle about__circle_animation_blurred"></div>
+          <div class="about__circle about__animation_blurred"></div>
         </section>
       </main>
       <footer class="footer">
